@@ -2,7 +2,11 @@ public class Persona {
     protected String nombre;
     protected String ocupacion;
     protected int edad;
-
+    public Persona(String n, String oc, int age){
+        this.nombre = n;
+        this.ocupacion = oc;
+        this.edad = age;
+    }
     public void comer() {
         System.out.println("Ñom Ñom comida casera");
     }
@@ -11,7 +15,5 @@ public class Persona {
         System.out.println("ZzzZzZzZ");
     }
 
-    public String hacerLoSuyo() {
-        return "";
-    }
+    public void hacerLoSuyo() { System.out.println("En cuarentena"); }
 }
